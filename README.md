@@ -1,7 +1,6 @@
 # C584RealTimeChat
 
 > A real-time chat application leveraging the MEVN stack and Socket.io.
-
 > Made by Ramses Ordonez.
 
 ## Build Setup
