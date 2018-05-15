@@ -1,9 +1,9 @@
 # C584RealTimeChat
 
 > A real-time chat application leveraging the MEVN stack and Socket.io.
-> MongoDB, ExpressJS, VueJS, NodeJS
-> Axios Backend API
-> Working but messy.
+>   MongoDB, ExpressJS, VueJS, NodeJS
+>   Axios Backend API
+>   Working but messy.
 
 ## Build Setup
 
