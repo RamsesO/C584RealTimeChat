@@ -38,7 +38,7 @@ export default{
 		},
 		submitUserInfo()  {
 			const _this = this;
-			axios.post('http://localhost:8081/api/users/login', {
+			axios.post('http://localhost:8080/api/users/login', {
 				email: this.user.email,
 				password: this.user.password
 			})

@@ -57,7 +57,7 @@
 			},
 			submitUserInfo(){
 				console.log(this.user.email + " "  + this.user.password);
-				axios.post('http://localhost:8081/api/users/register',
+				axios.post('http://localhost:8080/api/users/register',
 					{user: this.user}).then(function(response){
 						console.log(response);
 					}).catch(function(err) {

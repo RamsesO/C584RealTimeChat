@@ -99,7 +99,7 @@ export default{
 				text: this.newMessage
 			};
 
-			axios.post('http://localhost:8081/api/messages', messageData)
+			axios.post('http://localhost:8080/api/messages', messageData)
 			.then(function (response) {
 				console.log('inserted message');
 			})

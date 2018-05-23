@@ -53,7 +53,7 @@ export default{
 	},
 	created() {
 		const _this = this;
-		axios.get('http://localhost:8081/api/user', {
+		axios.get('http://localhost:8080/api/user', {
 			params: {
 				id: this.user_id
 			}
