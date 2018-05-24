@@ -30,7 +30,7 @@ app.use(session({
 const User = require('./models/User');
 const Message = require('./models/Message');
 // const routes = require('./routes');
-const routes = require('./routes');
+const routes = require('./routes/index.js');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
@@ -38,4 +38,4 @@ app.use(cors());
 app.use('/', routes);
 
 
-app.listen(8080, () => console.log('listening'));
+app.listen(8081, () => console.log('listening'));

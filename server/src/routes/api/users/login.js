@@ -8,6 +8,8 @@ module.exports = (req, res) => {
 	var email = req.body.user.email;
 	var password = req.body.user.password;
 
+	console.log(email + " " + password);
+
 	User.findOne({
 		'email' : email,
 		'password' : password

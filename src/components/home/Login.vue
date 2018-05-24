@@ -38,9 +38,11 @@ export default{
 		},
 		submitUserInfo()  {
 			const _this = this;
-			axios.post('http://localhost:8080/api/users/login', {
-				email: this.user.email,
-				password: this.user.password
+			axios.post('http://localhost:8081/api/users/login', {
+				user : {
+					email: this.user.email,
+					password: this.user.password
+				}
 			})
 			.then(function(response) {
 				console.log(response);

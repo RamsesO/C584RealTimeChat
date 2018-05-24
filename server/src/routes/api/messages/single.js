@@ -2,6 +2,7 @@ const Message = require('../../../models/Message');
 
 module.exports = (req, res) =>{
 	const userId = req.params.userId;
+	console.log('finding messages of user id: ' + userId);
 	Message.find({
 		$or:
 			[

@@ -53,18 +53,14 @@ export default{
 	},
 	created() {
 		const _this = this;
-		axios.get('http://localhost:8080/api/user', {
-			params: {
-				id: this.user_id
-			}
-		})
+		axios.get('http://localhost:8081/api/users/' + this.user_id)
 		.then(function (response){
-			if(response.data){
-				_this.user_name = response.data.name;
+			if(response.status === 200){
+				_this.user_name = response.data.user.name;
 			}
 		})
 		.catch(function(error) {
-			console.log(error);
+			console.log('found error: ' + error);
 		});
 	}
 }

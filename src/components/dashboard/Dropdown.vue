@@ -28,7 +28,7 @@ import axios from 'axios'
 		},
 		mounted() {
 			const _this = this;
-			axios.get('http://localhost:8080/api/users/all')
+			axios.get('http://localhost:8081/api/users')
 			.then(function(response) {
 				if(response.data.users){
 					var allUsers = response.data.users;
