@@ -3,7 +3,7 @@
 > A real-time chat application leveraging the MEVN stack and Socket.io.  
 >   MongoDB, ExpressJS, VueJS, NodeJS  
 >   Axios Backend API  
->   Working but messy.  
+>   Working but a little messy.  
 
 ## Build Setup
 
