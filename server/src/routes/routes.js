@@ -127,7 +127,6 @@ router.post('/api/messages', function(req, res){
 })
 router.get('/api/messages/user', function(req, res){
 	var user_id = req.query.id;
-	messageData = [];
 	Message.find({
 		$or:
 			[

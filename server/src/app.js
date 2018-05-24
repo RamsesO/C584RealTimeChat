@@ -27,9 +27,10 @@ app.use(session({
 }));
 
 
-var User = require('./models/User');
-var Message = require('./models/Message');
-var routes = require('./routes/routes');
+const User = require('./models/User');
+const Message = require('./models/Message');
+// const routes = require('./routes');
+const routes = require('./routes');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
